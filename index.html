@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angir | Game Developer</title>
+    <meta
+      name="description"
+      content="Game developer portfolio and devlog for Unity and Unreal Engine 5 projects."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas class="starfield" id="starfield" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Angir home">
+        <span class="brand-mark">A</span>
+        <span>Angir</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#devlog">Devlog</a>
+        <a href="#comments">Comments</a>
+        <a class="nav-button" href="https://alkion-0.itch.io/" target="_blank" rel="noreferrer">
+          itch.io
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">Active Developer Profile</p>
+          <h1>Creating games and interactive worlds.</h1>
+          <p class="intro">
+            Hi there! I'm currently a game developer passionate about creating unique and
+            immersive gaming experiences. I specialize in Unity and Unreal Engine 5. I'm
+            always open to discussions about game development, so feel free to make comments
+            or check out my projects!
+          </p>
+          <div class="status-chips" aria-label="Current developer focus">
+            <span>Unity systems</span>
+            <span>UE5 worlds</span>
+            <span>Devlogs online</span>
+          </div>
+          <div class="hero-actions">
+            <a class="primary-action" href="https://alkion-0.itch.io/" target="_blank" rel="noreferrer">
+              <span class="itch-logo" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img">
+                  <path
+                    d="M4.5 3.8h15l1.7 5.4c-.6 1-1.5 1.5-2.6 1.5s-1.9-.5-2.4-1.4c-.5.9-1.3 1.4-2.4 1.4s-1.9-.5-2.4-1.4c-.5.9-1.3 1.4-2.4 1.4s-1.9-.5-2.4-1.4c-.5.9-1.3 1.4-2.4 1.4s-2-.5-2.6-1.5L4.5 3.8Zm1.1 7.7c.8.4 1.8.4 2.7.1.8-.3 1.5-.8 1.9-1.5.5.7 1.1 1.2 2 1.5.8.3 1.8.3 2.6 0 .9-.3 1.5-.8 2-1.5.4.7 1.1 1.2 1.9 1.5.3.1.7.2 1.1.2v6.4c0 1.1-.8 2-1.9 2H6.9c-1.1 0-1.9-.9-1.9-2v-6.4c.2 0 .4-.1.6-.3Zm3.5 2.2v3.5h2.3v-2.1h1.2v2.1h2.3v-3.5c0-.5-.4-.9-.9-.9h-4c-.5 0-.9.4-.9.9Z"
+                  />
+                </svg>
+              </span>
+              Visit my itch.io
+            </a>
+            <a class="secondary-action" href="#comments">Leave a comment</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Game developer console preview">
+          <div class="playfield-label">
+            <span>Prototype View</span>
+            <span>Build Channel / Personal Lab</span>
+          </div>
+          <div class="viewport">
+            <div class="scene-grid">
+              <span class="tile player"></span>
+              <span class="tile glow a"></span>
+              <span class="tile block b"></span>
+              <span class="tile glow c"></span>
+              <span class="tile block d"></span>
+              <span class="tile marker"></span>
+            </div>
+            <div class="hud">
+              <span>BUILD 0.23</span>
+              <span>FPS 144</span>
+              <span>QUEST: MAKE IT FEEL ALIVE</span>
+            </div>
+          </div>
+          <div class="console">
+            <p><span>&gt;</span> compiling atmosphere shaders...</p>
+            <p><span>&gt;</span> tuning player feel: dash, camera, hit pause</p>
+            <p><span>&gt;</span> next note queued for devlog</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-strip stats" aria-label="Developer highlights">
+        <div>
+          <strong>Unity</strong>
+          <span>Gameplay prototypes and systems</span>
+        </div>
+        <div>
+          <strong>UE5</strong>
+          <span>Worldbuilding, lighting, cinematic feel</span>
+        </div>
+        <div>
+          <strong>Devlogs</strong>
+          <span>Notes, experiments, releases, postmortems</span>
+        </div>
+      </section>
+
+      <section class="content-section" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Current Base Camp</p>
+          <h2>Projects and updates live on itch.io.</h2>
+          <p>
+            I will keep posting development logs, playable builds, experiments, and production
+            notes here as my games evolve.
+          </p>
+        </div>
+        <div class="itch-panel">
+          <div class="itch-card">
+            <span class="itch-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M4.5 3.8h15l1.7 5.4c-.6 1-1.5 1.5-2.6 1.5s-1.9-.5-2.4-1.4c-.5.9-1.3 1.4-2.4 1.4s-1.9-.5-2.4-1.4c-.5.9-1.3 1.4-2.4 1.4s-1.9-.5-2.4-1.4c-.5.9-1.3 1.4-2.4 1.4s-2-.5-2.6-1.5L4.5 3.8Zm1.1 7.7c.8.4 1.8.4 2.7.1.8-.3 1.5-.8 1.9-1.5.5.7 1.1 1.2 2 1.5.8.3 1.8.3 2.6 0 .9-.3 1.5-.8 2-1.5.4.7 1.1 1.2 1.9 1.5.3.1.7.2 1.1.2v6.4c0 1.1-.8 2-1.9 2H6.9c-1.1 0-1.9-.9-1.9-2v-6.4c.2 0 .4-.1.6-.3Zm3.5 2.2v3.5h2.3v-2.1h1.2v2.1h2.3v-3.5c0-.5-.4-.9-.9-.9h-4c-.5 0-.9.4-.9.9Z"
+                />
+              </svg>
+            </span>
+            <div>
+              <h3>alkion-0.itch.io</h3>
+              <p>Builds, devlogs, prototypes, and project pages will be updated there.</p>
+            </div>
+            <a href="https://alkion-0.itch.io/" target="_blank" rel="noreferrer">Open itch.io</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section split" id="devlog">
+        <div class="section-heading">
+          <p class="eyebrow">Developer Log</p>
+          <h2>Public notes for experiments, builds, and lessons learned.</h2>
+        </div>
+        <div class="devlog-list" id="devlogList" aria-live="polite"></div>
+      </section>
+
+      <section class="content-section comments-section" id="comments">
+        <div class="section-heading">
+          <p class="eyebrow">Comments</p>
+          <h2>Talk game development, feedback, or project ideas.</h2>
+          <p>
+            Comments are powered by GitHub, so players and developers can leave public feedback
+            without needing a custom backend.
+          </p>
+        </div>
+        <div class="comments-panel">
+          <script
+            src="https://utteranc.es/client.js"
+            repo="magnolia2333/Angir.github.io"
+            issue-term="pathname"
+            label="comments"
+            theme="github-dark"
+            crossorigin="anonymous"
+            async
+          ></script>
+        </div>
+      </section>
+
+      <section class="content-section notes-section owner-only is-hidden" id="owner">
+        <form class="notes-form is-hidden" id="noteForm">
+          <label>
+            Title
+            <input id="noteTitle" type="text" placeholder="Prototype combat camera notes" required />
+          </label>
+          <label>
+            Tag
+            <select id="noteTag">
+              <option>Prototype</option>
+              <option>Unity</option>
+              <option>UE5</option>
+              <option>Art</option>
+              <option>Release</option>
+              <option>Postmortem</option>
+            </select>
+          </label>
+          <label class="full">
+            Note
+            <textarea
+              id="noteBody"
+              rows="8"
+              placeholder="What changed, what felt good, what needs another pass..."
+              required
+            ></textarea>
+          </label>
+          <div class="form-actions full">
+            <button type="submit">Save note</button>
+            <button type="button" class="ghost-button" id="exportButton">Export Markdown</button>
+            <button type="button" class="ghost-button" id="clearButton">Clear form</button>
+            <button type="button" class="ghost-button" id="lockButton">Lock writer</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <div class="owner-gate-zone" aria-hidden="false">
+      <div class="owner-gate" id="ownerGate">
+        <div class="knock-bubble">knock knock</div>
+        <button class="owner-door" type="button" aria-label="Owner access">
+          <span class="door-icon" aria-hidden="true"></span>
+        </button>
+        <form class="owner-lock" id="ownerLock">
+          <label>
+            Owner key
+            <input
+              id="ownerKey"
+              type="password"
+              placeholder="Enter owner key"
+              autocomplete="current-password"
+            />
+          </label>
+          <button type="submit">Unlock</button>
+          <p id="ownerLockStatus" role="status"></p>
+        </form>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <span>Angir / Game Developer</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
